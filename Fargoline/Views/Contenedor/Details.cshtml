@@ -1,0 +1,61 @@
+﻿@model Fargoline.Models.Contenedor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<br />
+<div class="card text-bg-primary mb-15" style="max-width: 68rem;">
+<div class="card-header">Detalles del contenedor</div>
+<div class="card-body">
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NumeroContenedor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NumeroContenedor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TipoContenedor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TipoContenedor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TamañoContenedor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TamañoContenedor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PesoContenedor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PesoContenedor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TaraContenedor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TaraContenedor)
+            </dd>
+
+        </dl>
+        <p>
+            @Html.ActionLink("Modificar", "Edit", new { NumeroContenedor = Model.NumeroContenedor }, new { @class = "btn btn-dark" })
+            @Html.ActionLink("Retornar", "Index", null, new { @class = "btn btn-light" })
+        </p>
+    </div>
+</div>
+</div>
+
